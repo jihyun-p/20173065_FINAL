@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/xeditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the site address."
+        android:text="http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=3bf817c424ee9ef813e7cc25b8d00cc2&#38;targetDt=20211201"
+        />
+
+    <Button
+        android:id="@+id/xbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REQUEST" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="MENU"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:layout_marginBottom="10dp"
+        android:background="#C6D1D6" />
+
+
+</LinearLayout>

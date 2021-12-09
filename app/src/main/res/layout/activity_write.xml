@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#C6D1D6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/xinputCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="0 / 80 byte"
+            android:textColor="#ff0000ff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/xinputMessage"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="80"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/xsendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="SEND"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/xcloseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="CLOSE"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="MENU"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
